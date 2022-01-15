@@ -29,3 +29,9 @@ print (has_lucky_number([]))
     
 #   >>> elementwise_greater_than([1, 2, 3, 4], 2)
 #   [False, False, True, True]
+
+def elementwise_greater_than(L, thresh):
+    return [el>thresh for el in L]
+
+
+print(elementwise_greater_than([1, 2, 3, 4], 2))
