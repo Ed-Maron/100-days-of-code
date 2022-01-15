@@ -9,5 +9,7 @@ def has_lucky_number(nums):
     for num in nums:
         if num % 7 == 0:
             return True
-        else:
-            return False
+    return False
+
+print (has_lucky_number([0, -1, 7]))
+print (has_lucky_number([]))
