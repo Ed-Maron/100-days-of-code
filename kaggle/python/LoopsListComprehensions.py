@@ -11,8 +11,8 @@ def has_lucky_number(nums):
             return True
     return False
 
-print (has_lucky_number([0, -1, 7]))
-print (has_lucky_number([]))
+#print (has_lucky_number([0, -1, 7]))
+#print (has_lucky_number([]))
 
 #2
 #R and Python have some libraries (like numpy and pandas) 
@@ -34,4 +34,17 @@ def elementwise_greater_than(L, thresh):
     return [el>thresh for el in L]
 
 
-print(elementwise_greater_than([1, 2, 3, 4], 2))
+#print(elementwise_greater_than([1, 2, 3, 4], 2))
+
+
+#3
+#Complete the body of the function below according to its docstring.
+
+def menu_is_boring(meals):
+	for i in range(1,len(meals)):
+		if meals[i] == meals[i-1]:
+			return True
+		i+=1
+	return False
+	
+print(menu_is_boring(['Spam', 'Eggs', 'Bacon', 'Spam']))
