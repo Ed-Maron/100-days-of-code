@@ -38,3 +38,18 @@ def word_search(doc_list, keyword):
 
 #doc_list = ["The Learn Python Challenge Casino.", "They bought a car", "Casinoville"]
 #print(word_search(doc_list, 'casino'))
+
+
+#3
+#Now the researcher wants to supply multiple keywords to search for. Complete the function below to help her.
+
+#(You're encouraged to use the word_search function you just wrote when implementing this function. Reusing code in this way makes your programs more robust and readable - and it saves typing!)
+def multi_word_search(doc_list, keywords):
+    result = dict()
+    for el in keywords:
+        a = word_search(doc_list, el)
+        result[el] = a
+    return result
+doc_list = ["The Learn Python Challenge Casino.", "They bought a car and a casino", "Casinoville"]
+keywords = ['casino', 'they']
+multi_word_search(doc_list, keywords)
