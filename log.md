@@ -27,19 +27,19 @@ https://pbpython.com/monte-carlo.html
 ## Day 1: January 16, 2022
 
 **Today's Progress** 
-
+Closed "Strings and Dictionaries" on Kaggle.com 
 
 
 **Thoughts:**
 
 
 
-**Link to work:** 
-
+**Link to work:**  
+https://www.kaggle.com/colinmorris/strings-and-dictionaries </br>
 
 
 **Time:**
 
-**Practice**: 
+**Practice**:  1h</br>
 
-**Theority**: 
+**Theority**: 0.5h 
