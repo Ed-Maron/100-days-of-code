@@ -31,28 +31,32 @@ sample = [
 #3
 
 def blackjack_hand_greater_than(hand_1, hand_2):
-    """
-    Return True if hand_1 beats hand_2, and False otherwise.
-    
-    In order for hand_1 to beat hand_2 the following must be true:
-    - The total of hand_1 must not exceed 21
-    - The total of hand_1 must exceed the total of hand_2 OR hand_2's total must exceed 21
-    
-    Hands are represented as a list of cards. Each card is represented by a string.
-    
-    When adding up a hand's total, cards with numbers count for that many points. Face
-    cards ('J', 'Q', and 'K') are worth 10 points. 'A' can count for 1 or 11.
-    
-    When determining a hand's total, you should try to count aces in the way that 
-    maximizes the hand's total without going over 21. e.g. the total of ['A', 'A', '9'] is 21,
-    the total of ['A', 'A', '9', '3'] is 14.
-    
-    Examples:
-    >>> blackjack_hand_greater_than(['K'], ['3', '4'])
-    True
-    >>> blackjack_hand_greater_than(['K'], ['10'])
-    False
-    >>> blackjack_hand_greater_than(['K', 'K', '2'], ['3'])
-    False
-    """
-    pass
+    result_hand_1 = calculate_hand(hand_1)
+    result_hand_2 = calculate_hand(hand_2)
+    return (result_hand_1 > result_hand_2 and result_hand_1 <= 21) or (result_hand_2 > 21 and result_hand_1 <= 21)
+
+
+def calculate_hand(hand):
+    count_of_A = 0
+    result = 0
+    for el in hand:
+        if el in ['J','Q','K']:
+            result +=10
+        elif el == 'A':
+            count_of_A +=1
+        else:
+            result += int(el)
+   
+    if count_of_A > 0:
+        result += count_of_A
+
+    if count_of_A > 0 and result<= 12:
+        result += 9
+    return result
+
+blackjack_hand_greater_than(['9'], ['9', 'Q', '8', 'A'])
+ #False
+blackjack_hand_greater_than(['A', '10','2'], ['10'])
+#    False
+blackjack_hand_greater_than(['A', 'A', 'A'], ['3'])
+#    False
