@@ -46,14 +46,38 @@ https://www.kaggle.com/colinmorris/strings-and-dictionaries </br>
 
 **Today's Progress** 
 
+Created first class</br>
+Realized API integration to load weather data
+
 **Thoughts:**
 
+To merge knowledge of class with API integration
+
+Got denied in registration test application on twitter :(
+
+**Link to work:**  
+
+https://openweathermap.org/api </br>
+https://habr.com/ru/post/315264/ </br>
+https://pypi.org/project/requests/ </br>
+https://github.com/pypa/get-pip </br>
+**Time:** </br>
+**Practice**: 2h </br>
+**Theority**:  30m
+
+
+
+
+## Day 3: January 18, 2022
+
+**Today's Progress** 
+
+**Thoughts:**
 
 
 **Link to work:**  
 
 
-
 **Time:** </br>
 **Practice**:  </br>
-**Theority**:
+**Theority**:  
