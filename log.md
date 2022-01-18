@@ -71,6 +71,26 @@ https://github.com/pypa/get-pip </br>
 ## Day 3: January 18, 2022
 
 **Today's Progress** 
+Add setters and getters. 
+
+Add procesing list of cities
+
+**Thoughts:**
+Convert data from response to dictionary with objects.
+
+**Link to work:**  
+
+https://netology-university.bitbucket.io/codestyle/python/ </br>
+https://python.land/objects-and-classes/python-constructors </br>
+
+**Time:** </br>
+**Practice**: 1h 30m </br>
+**Theority**:  1h
+
+
+## Day 43: January 19, 2022
+
+**Today's Progress** 
 
 **Thoughts:**
 
@@ -80,4 +100,4 @@ https://github.com/pypa/get-pip </br>
 
 **Time:** </br>
 **Practice**:  </br>
-**Theority**:  
+**Theority**: 
