@@ -78,6 +78,7 @@ Add procesing list of cities
 **Thoughts:**
 Convert data from response to dictionary with objects.
 
+I should do more commits
 **Link to work:**  
 
 https://netology-university.bitbucket.io/codestyle/python/ </br>
