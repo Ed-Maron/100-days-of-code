@@ -89,7 +89,31 @@ https://python.land/objects-and-classes/python-constructors </br>
 **Theority**:  1h
 
 
-## Day 43: January 19, 2022
+## Day 4: January 19, 2022
+
+**Today's Progress** 
+
+Continue to work with API and Classes in Python:</br>
+    Added new Class</br>
+    Created setters and getters. </br>
+
+Continue to study OOP in Python
+
+**Thoughts:**
+
+Result variable will be contain the following structure: [{name:self.name, weather_data:[{}{}{}]}]</br>
+
+**Link to work:**  
+
+
+**Time:** </br>
+**Practice**: 1h </br>
+**Theority**: 0
+
+
+
+
+## Day 5: January 20, 2022
 
 **Today's Progress** 
 
