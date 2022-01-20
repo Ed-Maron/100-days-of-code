@@ -1,18 +1,21 @@
+from asyncio.windows_events import NULL
 from unicodedata import name
 from  requests import get 
 from city_weather import City 
 
 cities = ["Petersburg","Moscow"]
-appid = ""
 
+
+a = City("Moscow")
 cities_id = dict()
+a._City__name = ''
 
 for city in cities:
     try:
         res = get("http://api.openweathermap.org/data/2.5/find",
                     params={'q':city, 'units': 'metric', 'APPID': appid})
         data = res.json()
-        cities_id[data['list'][0]['name']]=data['list'][0]['id']
+        cities_id[data['list'][0]['name']]=data['list'][0]['coord']
     except Exception as e:
         print("Exception (find):", e)
 
