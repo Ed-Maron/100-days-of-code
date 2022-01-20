@@ -89,6 +89,7 @@ https://python.land/objects-and-classes/python-constructors </br>
 **Theority**:  1h
 
 
+
 ## Day 4: January 19, 2022
 
 **Today's Progress** 
@@ -105,15 +106,38 @@ Result variable will be contain the following structure: [{name:self.name, weath
 
 **Link to work:**  
 
-
 **Time:** </br>
 **Practice**: 1h </br>
 **Theority**: 0
 
 
 
-
 ## Day 5: January 20, 2022
+
+**Today's Progress** 
+
+Create class Weather.</br>
+Create methods get_coord and get_weather_last_5days</br>
+Finished classes of processing data</br>
+
+**Thoughts:**
+
+Add cleanup</br>
+Add the first diagram</br>
+
+**Link to work:**  
+
+https://python.land/python-data-types</br>
+https://habr.com/ru/post/444338/</br>
+https://devpractice.ru/python-lesson-19-decorators/</br>
+**Time:** </br>
+**Practice**: 1h 30m </br>
+**Theority**: 1h
+
+
+
+
+## Day 6: January 20, 2022
 
 **Today's Progress** 
 
