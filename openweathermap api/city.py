@@ -26,7 +26,7 @@ class City:
                     params={'lat':self.coord['lat'], 'lon': self.coord['lon'],'dt':'1642275329', 'APPID': appid})
                 data = res.json()
                 
-                self.weather.append(Weather(data))
+                self.__weather = [Weather(el) for el in data['hourly']]
             except Exception as e:
                 print("Exception (find):", e)
 

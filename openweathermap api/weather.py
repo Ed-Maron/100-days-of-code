@@ -3,12 +3,11 @@ from datetime import datetime
 class Weather:
 
     def __init__(self, info):
-        self.__date_log = datetime.today()
-        self.__temp = 0
-        self.__feels_like  = 0
-        self.__humidity = 0 
-        self.__visibility = 0
- 
+        self.__date_log = info['dt']
+        self.__temp = info['temp']
+        self.__feels_like  = info['feels_like']
+        self.__humidity = info['humidity']
+        self.__visibility = info['visibility']
     #getters       
     @property
     def temp(self):

@@ -6,3 +6,4 @@ from city import City
 cities = ["Petersburg","Moscow"]
 
 result = [City(name) for name in cities]
+pass
