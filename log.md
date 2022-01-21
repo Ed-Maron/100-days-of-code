@@ -137,16 +137,36 @@ https://devpractice.ru/python-lesson-19-decorators/</br>
 
 
 
-## Day 6: January 20, 2022
+## Day 6: January 21, 2022
 
 **Today's Progress** 
 
+Update cleanup rules</br>
+Import matplotlib and buld the first diagram
+
 **Thoughts:**
 
+Add diagram that will be displayed weather data
 
 **Link to work:**  
-
-
+https://devpractice.ru/matplotlib-lesson-1-quick-start-guide/ </br>
+https://www.geeksforgeeks.org/how-to-add-days-to-a-date-in-python/
 **Time:** </br>
-**Practice**:  </br>
+**Practice**: 1h </br>
+**Theority**: 
+
+
+
+## Day 7: January 22, 2022
+
+**Today's Progress** 
+
+ 
+**Thoughts:**
+
+ 
+**Link to work:**  
+ 
+**Time:** </br>
+**Practice**: </br>
 **Theority**: 
