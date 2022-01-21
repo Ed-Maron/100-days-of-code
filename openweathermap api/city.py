@@ -10,7 +10,7 @@ class City:
         self.__weather = []
 
         self.get_coord()
-        self.get_weather_last_5days()
+        self.get_weather()
 
     def get_coord(self):
         try:
@@ -21,17 +21,18 @@ class City:
         except Exception as e:
             self.__msg = e
 
-    def get_weather_last_5days(self):
+    def get_weather(self):
             try:
                 res = get("http://api.openweathermap.org/data/2.5/onecall/timemachine",
                     params={'lat':self.coord['lat'], 
                             'lon': self.coord['lon'],
-                            'dt': int(datetime.timestamp(self.curent_date+timedelta(days=-4))), 
+                            'dt': int(datetime.timestamp(self.curent_date)), 
                             'APPID': appid}
                 )
                 data = res.json()
                 
                 self.__weather = [Weather(el) for el in data['hourly']]
+                self.__weather.append(Weather(data['current']))
             except Exception as e:
                 print("Exception (find):", e)
 

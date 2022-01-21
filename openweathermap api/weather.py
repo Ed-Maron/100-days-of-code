@@ -4,8 +4,8 @@ class Weather:
 
     def __init__(self, info):
         self.__date_log = datetime.utcfromtimestamp(info['dt']).strftime('%Y-%m-%d %H:%M:%S')
-        self.__temp = info['temp'] / 32
-        self.__feels_like  = info['feels_like'] / 32
+        self.__temp = info['temp'] - 273,15 
+        self.__feels_like  = info['feels_like'] - 273,15
         self.__humidity = info['humidity']
         self.__visibility = info['visibility']
     #getters       
