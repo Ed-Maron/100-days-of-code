@@ -157,7 +157,25 @@ https://www.geeksforgeeks.org/how-to-add-days-to-a-date-in-python/
 
 
 
-## Day 7: January 22, 2022
+## Day 8: January 22, 2022
+
+**Today's Progress** 
+
+Created 2 method to show diagrams: Temp versus time and Feel likes versus time
+ 
+**Thoughts:**
+
+ 
+
+**Link to work:**  
+ 
+**Time:** </br>
+**Practice**: </br>
+**Theority**: 
+
+
+
+## Day 8: January 23, 2022
 
 **Today's Progress** 
 

@@ -38,23 +38,32 @@ class City:
                 print("Exception (find):", e)
 
     def show_temp_diagram(self):
-        self.__build_diagram([el.temp for el in self.__weather], 'Temperature')
+        data = self.__weather
+        self.__build_single_diagram(
+            {
+                "x":[i for i in range(len(data))],
+                "y":[el.temp[0] for el in data]
+            }, 
+            'Temperature')
         pass
 
     def show_feels_like_diagram(self):
-        self.__build_diagram([el.feels_like for el in self.__weather], 'Feels like')
+        data = self.__weather
+        self.__build_single_diagram(
+            {
+                "x":[i for i in range(len(data))],
+                "y":[el.feels_like[0] for el in data]
+            }, 
+            'Feels like')
         pass
     
-    def __build_diagram(self, data, y_label):
+    def __build_single_diagram(self, data, y_label):
         
-        x = [i for i in range(len(data))]
-        y = [data[i] for i in range(len(data))]
-
         plt.title(y_label + " versus time")
         plt.xlabel("Hour")
         plt.ylabel(y_label)
         plt.grid() 
-        plt.plot(x, y)
+        plt.plot(data['x'], data['y'])
         pass
 
     @property
