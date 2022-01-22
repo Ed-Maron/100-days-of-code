@@ -1,6 +1,7 @@
 from  requests import get 
 from datetime import datetime, timedelta
 from weather import Weather
+import matplotlib.pyplot as plt
 
 appid = "3e6f7c567fcc226aa6b7ab089fd6380e"
 class City:
@@ -35,6 +36,18 @@ class City:
                 self.__weather.append(Weather(data['current']))
             except Exception as e:
                 print("Exception (find):", e)
+
+    def display_diagram_temp_hourly(self):
+        
+        x = [i for i in range(len(self.__weather))]
+        y = [self.__weather[i].temp for i in range(len(self.__weather))]
+
+        plt.title("Temperature versus time")
+        plt.xlabel("hour")
+        plt.ylabel("temp")
+        plt.grid() 
+        plt.plot(x, y)
+        pass
 
     @property
     def name(self):
