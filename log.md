@@ -164,13 +164,14 @@ https://www.geeksforgeeks.org/how-to-add-days-to-a-date-in-python/
 Created 2 method to show diagrams: Temp versus time and Feel likes versus time
  
 **Thoughts:**
+fix bugs
 
- 
+ Split methods
 
 **Link to work:**  
  
 **Time:** </br>
-**Practice**: </br>
+**Practice**: 2h</br>
 **Theority**: 
 
 
