@@ -37,14 +37,22 @@ class City:
             except Exception as e:
                 print("Exception (find):", e)
 
-    def display_diagram_temp_hourly(self):
-        
-        x = [i for i in range(len(self.__weather))]
-        y = [self.__weather[i].temp for i in range(len(self.__weather))]
+    def show_temp_diagram(self):
+        self.__build_diagram([el.temp for el in self.__weather], 'Temperature')
+        pass
 
-        plt.title("Temperature versus time")
-        plt.xlabel("hour")
-        plt.ylabel("temp")
+    def show_feels_like_diagram(self):
+        self.__build_diagram([el.feels_like for el in self.__weather], 'Feels like')
+        pass
+    
+    def __build_diagram(self, data, y_label):
+        
+        x = [i for i in range(len(data))]
+        y = [data[i] for i in range(len(data))]
+
+        plt.title(y_label + " versus time")
+        plt.xlabel("Hour")
+        plt.ylabel(y_label)
         plt.grid() 
         plt.plot(x, y)
         pass
