@@ -157,7 +157,7 @@ https://www.geeksforgeeks.org/how-to-add-days-to-a-date-in-python/
 
 
 
-## Day 8: January 22, 2022
+## Day 7: January 22, 2022
 
 **Today's Progress** 
 
@@ -174,18 +174,32 @@ fix bugs
 **Practice**: 2h</br>
 **Theority**: 
 
+## MISSING: January 23, 2022 - January 30, 2022
+
+was sick :(
 
 
-## Day 8: January 23, 2022
+## Day 8: January 31, 2022
 
 **Today's Progress** 
 
- 
+ split diagrams 
+
 **Thoughts:**
 
- 
+ move plot methods to another file
+
+ add methods:
+
+    -method split all parament on different diagrams
+    
+    -method show selected parament in merging diagram
+
+
 **Link to work:**  
  
+ https://devpractice.ru/matplotlib-lesson-2-work-with-pyplot/
+
 **Time:** </br>
-**Practice**: </br>
-**Theority**: 
+**Practice**: 1h</br>
+**Theority**: 15m
