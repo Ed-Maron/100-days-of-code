@@ -203,3 +203,23 @@ was sick :(
 **Time:** </br>
 **Practice**: 1h</br>
 **Theority**: 15m
+
+
+
+## Day 9: Feb 1, 2022
+
+**Today's Progress** 
+
+Worked with pyplot
+
+**Thoughts:**
+
+Start course on kaggle
+
+
+**Link to work:**  
+ 
+
+**Time:** </br>
+**Practice**: 1h</br>
+**Theority**:
