@@ -1,3 +1,4 @@
+from tkinter import ACTIVE
 from  requests import get 
 from datetime import datetime, timedelta
 from weather import Weather
@@ -5,7 +6,9 @@ import matplotlib.pyplot as plt
 
 appid = "3e6f7c567fcc226aa6b7ab089fd6380e"
 class City:
+    LAST_IMG_INDEX = 1
     curent_date = datetime.now()
+
     def __init__(self, name):
         self.__name = name
         self.__weather = []
@@ -38,27 +41,27 @@ class City:
                 print("Exception (find):", e)
 
 
-    def show_split_diagramm(self):
+    def show_feels_like_data(self):
         data = self.__weather
         
-        temp_data = {
-            "x":[i for i in range(len(data))],
-            "y":[el.temp[0] for el in data]
-        }
+    #    temp_data = {
+    #        "x":[i for i in range(len(data))],
+    #        "y":[el.temp[0] for el in data]
+    #   }
 
         feels_like_data = {
             "x":[i for i in range(len(data))],
             "y":[el.feels_like[0] for el in data]
         }
         plt.ion()
-        plt.title("Temp versus time")
+        plt.title("Feels like versus time")
         plt.xlabel("Hour")
         plt.ylabel("Temp")
         plt.grid() 
-        plt.subplot(2, 2, 1)
-        plt.plot(temp_data['x'], temp_data['y'])
-        plt.subplot(2, 2, 2)
+        plt.subplot(2, 2, self.LAST_IMG_INDEX)
         plt.plot(feels_like_data['x'], feels_like_data['y'])
+        
+        self.LAST_IMG_INDEX+=1
         pass
 
     @property
