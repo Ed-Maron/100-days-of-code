@@ -223,3 +223,20 @@ Start course on kaggle
 **Time:** </br>
 **Practice**: 1h</br>
 **Theority**:
+
+
+
+## Day 10: Feb 2, 2022
+
+**Today's Progress** 
+
+Started new course 'Intro to Machine Learning'
+
+**Thoughts:**
+
+**Link to work:**  
+ 
+https://www.kaggle.com/learn/intro-to-machine-learning
+
+**Time:** </br>
+**Course**: 2h</br>
