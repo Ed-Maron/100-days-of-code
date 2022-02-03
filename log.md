@@ -240,3 +240,20 @@ https://www.kaggle.com/learn/intro-to-machine-learning
 
 **Time:** </br>
 **Course**: 2h</br>
+
+
+
+## Day 11: Feb 3, 2022
+
+**Today's Progress** 
+
+Continue course 'Intro to Machine Learning'
+
+**Thoughts:**
+
+**Link to work:**  
+ 
+https://www.kaggle.com/learn/intro-to-machine-learning
+
+**Time:** </br>
+**Course**: 1h</br>
